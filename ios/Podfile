@@ -3,14 +3,14 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 
 platform :ios, '10.0'
 
-target 'rn_boilerplate' do
+target 'BeCosApp' do
   config = use_native_modules!
   permissions_path = '../node_modules/react-native-permissions/ios'
   pod 'Permission-PhotoLibrary', :path => "#{permissions_path}/PhotoLibrary.podspec"
   pod 'Permission-Camera', :path => "#{permissions_path}/Camera.podspec"
   use_react_native!(:path => config["reactNativePath"])
 
-  target 'rn_boilerplateTests' do
+  target 'BeCosAppTests' do
     inherit! :complete
     # Pods for testing
   end
@@ -25,10 +25,10 @@ target 'rn_boilerplate' do
   end
 end
 
-target 'rn_boilerplate-tvOS' do
-  # Pods for rn_boilerplate-tvOS
+target 'BeCosApp-tvOS' do
+  # Pods for BeCosApp-tvOS
 
-  target 'rn_boilerplate-tvOSTests' do
+  target 'BeCosApp-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end
