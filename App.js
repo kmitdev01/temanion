@@ -9,17 +9,21 @@
 import React from 'react';
 
 import Routes from './src/Navigation/Routes';
-import { Provider } from 'react-redux';
-import { PersistGate } from 'redux-persist/integration/react';
-import { store, persistor } from './src/Redux/Store';
+import theme from './src/Components/Theme/Index';
+import {ThemeProvider} from '@shopify/restyle';
+import {Provider} from 'react-redux';
+import {PersistGate} from 'redux-persist/integration/react';
+import {store, persistor} from './src/Redux/Store';
 
 const App = () => {
   return (
-    <Provider store={store}>
-      <PersistGate loading={null} persistor={persistor}>
-        <Routes />
-      </PersistGate>
-    </Provider>
+    <ThemeProvider theme={theme}>
+      <Provider store={store}>
+        <PersistGate loading={null} persistor={persistor}>
+          <Routes />
+        </PersistGate>
+      </Provider>
+    </ThemeProvider>
   );
 };
 

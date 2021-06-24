@@ -1,24 +1,15 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { useDispatch } from 'react-redux';
-import {
-  View,
-  Image,
-  TouchableOpacity,
-  Dimensions,
-  StatusBar,
-  ScrollView,
-} from 'react-native';
-import authConstants from '../../Redux/AuthConstants';
-import { BaseColor, Typography, Text } from '../ReusableComponents';
-import { removeAuthToken } from '../Helpers/utils';
-const { width } = Dimensions.get('window');
-export default (props) => {
+import React, {useState, useEffect, useRef} from 'react';
+import {useDispatch} from 'react-redux';
+import {createBox, createText} from '@shopify/restyle';
+const Box = createBox();
+const Text = createText();
+
+export default ({navigation}) => {
   const dispatch = useDispatch();
 
-  const { navigation } = props;
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text title="Dashboard" />
-    </View >
+    <Box flex={1} justifyContent="center" alignItems="center">
+      <Text>Dashboard</Text>
+    </Box>
   );
 };

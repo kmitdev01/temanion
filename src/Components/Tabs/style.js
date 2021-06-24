@@ -1,9 +1,9 @@
-import { StyleSheet, Platform, Dimensions } from 'react-native';
+import {StyleSheet, Platform, Dimensions} from 'react-native';
 
-const { height } = Dimensions.get('window');
+const {height} = Dimensions.get('window');
 
 const styles = StyleSheet.create({
-  firstStyle: { flex: 1, marginTop: 10 },
+  firstStyle: {flex: 1, marginTop: 10},
   mainViewOne: {
     height: 50,
     paddingRight: 20,
@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 
-  selected: { width: 5, marginRight: 10 },
+  selected: {width: 5, marginRight: 10},
   nameStyle: {
     marginTop: 5,
     alignSelf: 'center',
@@ -39,9 +39,9 @@ const styles = StyleSheet.create({
     marginLeft: 10,
   },
 
-  widthOne: { width: 137 },
-  widthTwo: { width: 170 },
-  mainContainer: { paddingTop: 10 },
+  widthOne: {width: 137},
+  widthTwo: {width: 170},
+  mainContainer: {paddingTop: 10},
   welcomeBoxTextOne: {
     marginHorizontal: 10,
     height: 15,
@@ -126,8 +126,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  iconStyle: { fontSize: 20 },
-  sideSpace: { marginRight: 10 },
+  iconStyle: {fontSize: 20},
+  sideSpace: {marginRight: 10},
   smallImage: {
     flex: 1,
     justifyContent: 'center',
@@ -226,7 +226,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
   },
   height_55: {
-
     //height: 80,
     elevation: 0,
   },
@@ -238,7 +237,6 @@ const styles = StyleSheet.create({
     //paddingBottom: 3,
     //justifyContent: 'space-between',
     //borderTopColor: '#CBCED1',
-
   },
   tabBarItemIconActive: {
     alignSelf: 'center',
@@ -268,14 +266,14 @@ const styles = StyleSheet.create({
   plusIcon: {
     marginRight: 10,
   },
-  container: { flex: 1 },
-  containerFlex: { flex: 1 },
+  container: {flex: 1},
+  containerFlex: {flex: 1},
 
   tabContainer: {
     height: 55,
 
     elevation: 10,
-    shadowOffset: { width: 0, height: 1 },
+    shadowOffset: {width: 0, height: 1},
     shadowColor: '#d3d3d3',
     shadowOpacity: 0.5,
   },
@@ -310,12 +308,12 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: 'black',
   },
-  drawerIcon: { height: 35, width: 60 },
+  drawerIcon: {height: 35, width: 60},
 
   dialogContent: {
     paddingTop: 12,
   },
-  tabIcon: { height: 22 },
+  tabIcon: {height: 22},
   flatHeaderStyle: {
     borderBottomWidth: 0,
     elevation: 0,
@@ -341,6 +339,6 @@ const styles = StyleSheet.create({
   profile: {
     marginRight: 15,
   },
-  flexRow: { flexDirection: 'row' },
+  flexRow: {flexDirection: 'row'},
 });
 export default styles;
