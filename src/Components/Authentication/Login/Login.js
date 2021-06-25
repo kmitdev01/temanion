@@ -3,7 +3,7 @@ import {useDispatch} from 'react-redux';
 import {TouchableOpacity} from 'react-native';
 import {createBox, createText} from '@shopify/restyle';
 import authConstants from '../../../Redux/AuthConstants';
-import {Button, Input} from '../../ReusableComponents/Index';
+import {Button, Input} from '../../ReusableComponents';
 const Box = createBox();
 const Text = createText();
 export default (props) => {
