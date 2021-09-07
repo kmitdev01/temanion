@@ -1,9 +1,8 @@
-import React, {useState, useEffect} from 'react';
-import {ActivityIndicator, View} from 'react-native';
+import React from 'react';
 import {useSelector} from 'react-redux';
 import OnboardingNavigation from './OnboardingNavigation';
 import Dashboardnavigation from './DashboardNavigation';
-import {SafeAreaProvider} from 'react-native-safe-area-context';
+
 export default () => {
   let onboardCompleted = false;
   const {user} = useSelector((state) => ({
@@ -13,14 +12,6 @@ export default () => {
     onboardCompleted = true;
   }
   return (
-    <>
-      {onboardCompleted ? (
-        <Dashboardnavigation />
-      ) : (
-        <SafeAreaProvider>
-          <OnboardingNavigation />
-        </SafeAreaProvider>
-      )}
-    </>
+    <>{onboardCompleted ? <Dashboardnavigation /> : <OnboardingNavigation />}</>
   );
 };

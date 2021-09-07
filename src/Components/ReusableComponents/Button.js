@@ -3,7 +3,7 @@ import React from 'react';
 import SpinnerButton from 'react-native-spinner-button';
 import {Dimensions, StyleSheet} from 'react-native';
 import {useSelector} from 'react-redux';
-import {palette} from '../Theme/Index';
+
 const Text = createText();
 const {width} = Dimensions.get('window');
 
@@ -17,7 +17,7 @@ const Button = ({label, buttonStyle, ...props}) => {
       spinnerColor={'white'}
       buttonStyle={[
         {
-          backgroundColor: palette.primary1,
+          backgroundColor: 'cyan',
         },
         buttonStyle ? buttonStyle : styles.button,
       ]}
@@ -34,6 +34,7 @@ export default Button;
 
 const styles = StyleSheet.create({
   button: {
+    backgroundColor: 'black',
     width: width,
     height: 41.75,
     marginHorizontal: 20,

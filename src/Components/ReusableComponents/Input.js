@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 import {createBox, createText} from '@shopify/restyle';
 import {TextInput as RNTextInput, StyleSheet, Dimensions} from 'react-native';
-import {palette} from '../Theme/Index';
+// import {palette} from '../Theme/Index';
 const {width} = Dimensions.get('window');
 const Box = createBox();
 const Text = createText();
